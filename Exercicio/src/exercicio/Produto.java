@@ -1,14 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package exercicio;
 
-/**
- *
- * @author 1091392223010
- */
 public class Produto {
     private Integer codigo;
     
@@ -85,8 +76,5 @@ public class Produto {
     @Override
     public String toString() {
         return "Produto{" + "codigo=" + codigo + ", tipo=" + tipo + ", descricao=" + descricao + ", quantidade=" + quantidade + ", precoCusto=" + precoCusto + ", precoVenda=" + precoVenda + '}';
-    }
-    
-    
-      
+    }         
 }
