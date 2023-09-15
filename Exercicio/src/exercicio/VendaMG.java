@@ -1,4 +1,4 @@
-package exercicio;
+package Exercicio;
 
 public class VendaMG extends Venda {
  
