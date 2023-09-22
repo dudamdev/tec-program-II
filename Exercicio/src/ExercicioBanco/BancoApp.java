@@ -26,5 +26,29 @@ public class BancoApp {
 
         movimentacao.sacar(duda, 1500D);
         System.out.println(duda);
+
+        // Teste do banco Franca
+        System.out.println("\n\nMOVIMENTAÇÕES BANCO DUDA");
+        movimentacao = new DudaBankMovimentacao();
+
+        Conta contaDuda = new Conta(555);
+        movimentacao.depositar(contaDuda, 1000D);
+
+        System.out.println(contaDuda);
+
+        Emprestimo emprestimo = new DudaBankMovimentacao();
+        emprestimo.emprestar(contaDuda, 220D);
+        movimentacao.depositar(contaDuda, 10.99);
+        movimentacao.depositar(contaDuda, 33.99);
+        movimentacao.depositar(contaDuda, 22.99);
+        movimentacao.sacar(contaDuda, 22.99);
+        contaDuda.mostrarExtrato();
+        
+        System.out.println(contaDuda);
+
+
+
+     
+
     }
 }
