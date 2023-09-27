@@ -1,4 +1,4 @@
-package Exercicio;
+package Exercicios;
 public class VendaRS extends Venda {
 
     @Override

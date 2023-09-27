@@ -1,4 +1,4 @@
-package Exercicio;
+package Exercicios;
 
 public class Venda {
     public Produto vender(Produto produto) {

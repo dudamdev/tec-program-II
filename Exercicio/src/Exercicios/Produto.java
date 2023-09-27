@@ -1,4 +1,4 @@
-package Exercicio;
+package Exercicios;
 
 public class Produto {
     private Integer codigo;

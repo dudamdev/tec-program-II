@@ -1,4 +1,4 @@
-package Exercicio;
+package Exercicios;
 
 public abstract class Imposto {
     
