@@ -45,5 +45,7 @@ public class Questao6 {
         System.out.println("Desconto INSS............: " + deducao);
         System.out.println("O valor salário liquido é: " + salarioLiquido);
 
+        input.close();
+
     }
 }

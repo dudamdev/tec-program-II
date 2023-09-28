@@ -35,6 +35,6 @@ public class Questao4 {
         System.out.println("Lista: " + listaNumeros);
         System.out.println("Quantidade de números negativos: " + cont);
 
-
+        input.close();
     }
 }
