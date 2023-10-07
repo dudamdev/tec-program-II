@@ -12,17 +12,29 @@ public class Colecoes {
 
         ((LinkedList<Integer>) listaEncadeada).addFirst(1);
 
-        List<Integer> listaNumeros = new ArrayList<Integer>();
-
+        //lista não tipada
         List lista = new ArrayList();
+
         lista.add(333);
         lista.add("Raul");
+
+        //lista tipada        
+        List<Integer> listaNumeros = new ArrayList<Integer>();
 
         for (int i = 0; i < 100; i++) {
             listaNumeros.add((int) (Math.random() * 999));
         }
         
         listaNumeros.add(4, 999);
+
+        //lista com métodos encadeados
+        Integer totalMultiplos = listaNumeros
+                .stream()
+                .filter(d -> d % 5 == 0)
+                .mapToInt(d -> d)
+                .sum();
+
+        System.out.println("Total stream multiplos " + totalMultiplos);
 
         //por posição
         for (int i = 0; i < listaNumeros.size(); i++) {
@@ -34,9 +46,9 @@ public class Colecoes {
         //for enhanced
         for (Integer n : listaNumeros) {
             if (n % 5 == 0) {
-                somaMultiplos += 1;
+                somaMultiplos += n;
             }
-            
+            System.out.println(n);            
         }
 
         //stream
